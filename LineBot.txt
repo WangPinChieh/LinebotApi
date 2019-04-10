@@ -1,0 +1,106 @@
+Request.Params["HTTP_X_LINE_SIGNATURE"]
+"24+so/ZXhyz7Msj+4Hg+wyjqx4QVWnLkwt0VBxBIF8o="
+
+
+
+Secret Key
+da8364e24d575b296379539ae7a9d4c3
+
+
+Request.Params.AllKeys
+{string[49]}
+    [0]: "ALL_HTTP"
+    [1]: "ALL_RAW"
+    [2]: "APPL_MD_PATH"
+    [3]: "APPL_PHYSICAL_PATH"
+    [4]: "AUTH_TYPE"
+    [5]: "AUTH_USER"
+    [6]: "AUTH_PASSWORD"
+    [7]: "LOGON_USER"
+    [8]: "REMOTE_USER"
+    [9]: "CERT_COOKIE"
+    [10]: "CERT_FLAGS"
+    [11]: "CERT_ISSUER"
+    [12]: "CERT_KEYSIZE"
+    [13]: "CERT_SECRETKEYSIZE"
+    [14]: "CERT_SERIALNUMBER"
+    [15]: "CERT_SERVER_ISSUER"
+    [16]: "CERT_SERVER_SUBJECT"
+    [17]: "CERT_SUBJECT"
+    [18]: "CONTENT_LENGTH"
+    [19]: "CONTENT_TYPE"
+    [20]: "GATEWAY_INTERFACE"
+    [21]: "HTTPS"
+    [22]: "HTTPS_KEYSIZE"
+    [23]: "HTTPS_SECRETKEYSIZE"
+    [24]: "HTTPS_SERVER_ISSUER"
+    [25]: "HTTPS_SERVER_SUBJECT"
+    [26]: "INSTANCE_ID"
+    [27]: "INSTANCE_META_PATH"
+    [28]: "LOCAL_ADDR"
+    [29]: "PATH_INFO"
+    [30]: "PATH_TRANSLATED"
+    [31]: "QUERY_STRING"
+    [32]: "REMOTE_ADDR"
+    [33]: "REMOTE_HOST"
+    [34]: "REMOTE_PORT"
+    [35]: "REQUEST_METHOD"
+    [36]: "SCRIPT_NAME"
+    [37]: "SERVER_NAME"
+    [38]: "SERVER_PORT"
+    [39]: "SERVER_PORT_SECURE"
+    [40]: "SERVER_PROTOCOL"
+    [41]: "SERVER_SOFTWARE"
+    [42]: "URL"
+    [43]: "HTTP_CONTENT_LENGTH"
+    [44]: "HTTP_CONTENT_TYPE"
+    [45]: "HTTP_ACCEPT"
+    [46]: "HTTP_HOST"
+    [47]: "HTTP_USER_AGENT"
+    [48]: "HTTP_X_LINE_SIGNATURE"
+
+
+
+"{\"events\":
+	[
+		{
+			\"type\":\"message\",
+			\"replyToken\":\"9028fc46f3df45cea0701e1a1851afbc\",
+			\"source\":
+				{
+					\"userId\":\"Ud2307050d6a95205010ba114645df1ff\",
+					\"type\":\"user\"
+				},
+			\"timestamp\":1554881156118,
+			\"message\":
+				{
+					\"type\":\"text\",
+					\"id\":\"9668370744849\",
+					\"text\":\"Test\"
+				}
+		}
+	],
+  \"destination\":\"U1a5fda9c03f42e92097486ad8f45d300\"}"
+
+
+
+
+"MuO3VlbBsxpwqeuq0yKnj160qvUY0j9laGl6DIXuQRg="
+"{\"events\":[{\"type\":\"message\",\"replyToken\":\"9028fc46f3df45cea0701e1a1851afbc\",\"source\":{\"userId\":\"Ud2307050d6a95205010ba114645df1ff\",\"type\":\"user\"},\"timestamp\":1554881156118,\"message\":{\"type\":\"text\",\"id\":\"9668370744849\",\"text\":\"Test\"}}],\"destination\":\"U1a5fda9c03f42e92097486ad8f45d300\"}"
+
+
+
+
+
+
+Id = 56, Status = RanToCompletion, Method = "{null}", Result = "{\"message\":\"Authorization header required. Must follow the scheme, 'Authorization: Bearer <ACCESS TOKEN>'\"}"
+
+Id = 29, Status = RanToCompletion, Method = "{null}", Result = "{\"message\":\"The content type, 'application/x-www-form-urlencoded', is not supported\"}"
+
+Id = 51, Status = RanToCompletion, Method = "{null}", Result = "{\"message\":\"The property, 'messages', in the request body is invalid (line: 1, column: 61)\"}"
+
+Id = 29, Status = RanToCompletion, Method = "{null}", Result = "{\"message\":\"The request body has 1 error(s)\",\"details\":[{\"message\":\"May not be empty\",\"property\":\"messages[0].text\"}]}"
+
+Id = 29, Status = RanToCompletion, Method = "{null}", Result = "{\"message\":\"The request body has 1 error(s)\",\"details\":[{\"message\":\"May not be empty\",\"property\":\"messages[0].text\"}]}"
+
+Id = 49, Status = RanToCompletion, Method = "{null}", Result = "{\"message\":\"Invalid reply token\"}"
