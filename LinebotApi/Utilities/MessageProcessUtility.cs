@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Security.Cryptography;
 using System.Web;
 
@@ -41,6 +42,15 @@ namespace LinebotApi.Utilities
 
                 return _ComputedSignature.Equals(this.m_MessageSignature);
             }
+        }
+        public StringContent processReplyMessage(string replyToken, string message)
+        {
+            var _Message = new Dictionary<string, string> { { "type", "text" }, { "text", "Hello User, your message is: " + message } };
+            List<Dictionary<string, string>> _Messages = new List<Dictionary<string, string>>();
+            _Messages.Add(_Message);
+            var _ReplyMessagesContainer = new Dictionary<string, object> { { "replyToken", replyToken }, { "messages", _Messages } };
+
+            return new StringContent(JsonConvert.SerializeObject(_ReplyMessagesContainer), System.Text.Encoding.UTF8, "application/json");
         }
         private string retriveMessageBody()
         {
